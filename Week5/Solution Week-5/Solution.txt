@@ -1,0 +1,35 @@
+WRITE A PYTHON PROGRAM TO CREATE CSV FILE STUDENT.CSV: 
+
+Import csv
+
+With open(‘student.csv’,’w’,newline=’’) as d :
+    W=csv.writer(d)
+    Fields=[‘sid’,’sname’,’city’,’contact’]
+    w.writerow(fields)
+    rows=[[1,’om’,’surat’,8956214708],
+    [2,’sai’,’surat’,8956231458],
+    [3,’ram’,’vyara’,8956247809],
+    [4,’krishna’,’navsari’,9657482308],
+    [5,’gopal’,’bardoli’,7568923418]]
+    w.writerows(rows)
+
+#INSERT INPUT OF 5 RECORDS THROUGH USER:    
+From csv import writer
+With open(‘student.csv’,’a’,newline=’’) as d :
+    W=csv.writer(d)
+    L=[]
+    For I in range(5):
+        S_id=int(input(“enter student id:”))
+        S_name=input(“enter student name:”)
+        City=input(“enter student city:”)
+        Contact=input(“enter student mobile number:”)
+        T=(sid, sname,city,contact)
+        l.append(t)
+    w.writerows(l)
+    
+#READ THIS FILE USING CSV MODULE AND PRINTING IT:
+From csv import reader
+With open(‘student.csv’,’r’,newline=’’) as d:
+    W=reader()
+    For row in w:
+        Print(row)
